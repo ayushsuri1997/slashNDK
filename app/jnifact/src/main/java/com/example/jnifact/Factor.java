@@ -6,8 +6,8 @@ public class Factor {
         System.loadLibrary("native-lib");
     }
 
-    public double calculate(int num){
-        double a = factcal(num);
+    public static double calculate(int num){
+        double a = new Factor().factcal(num);
         return a;
     }
 
